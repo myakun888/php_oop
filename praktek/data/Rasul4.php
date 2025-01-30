@@ -14,11 +14,11 @@ class Rasul3{
         
     }
 
-
-  public  function __destruct()
-    {
-        echo "terimakasi $this->name".PHP_EOL;
+    public function informasi (){
+        echo "nama: $this->name \ngelar: $this->gelar".PHP_EOL;
     }
+
+
 }
 
 //* kita extend class 
