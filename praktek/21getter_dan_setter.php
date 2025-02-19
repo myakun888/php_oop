@@ -27,12 +27,15 @@
 
 class informasi
 {
-    private $id = null;
-    public $status = null;
+    private $id = null; // default nya kita isi null, data string
+    public $status = null; // defautl nya null ,untuk data nya kita isi boolean
 
     //boolean
-    function set_status($status = false)
+    function set_status($status = false):void // default argument false
+
     {
+
+        //validasi di setter
         if (is_bool($status) == true) {
 
             $this->status = $status;
@@ -46,6 +49,9 @@ class informasi
 
             return "input ulang data anda , data yang anda masukan harus boolean, true jika menikah, false jika belum menikah";
         }
+        // return  $this->status; // ini jika pure boolean
+
+        // untuk yang di bawah ini kita ubah yang td nya boolean true jadi menikah, false belum menikah
         return    $this->status == true ? "menikah" : "beluh menikah";
     }
 
@@ -70,3 +76,10 @@ $manusia->set_status();
 // var_dump($manusia->get_id());
 var_dump($manusia->is_status());
 // var_dump($manusia->get)
+
+//! NOTE
+/**
+ * jadi inti dari get dan set , kita menerapkan konsep encapsulatian , agar data kita terutama data yang sensitif tidak bisa di akses langsung
+ * 
+ * memang terlihat jadi lebih banyak function 
+ */
