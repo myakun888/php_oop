@@ -22,11 +22,11 @@ di var_dump
 
 ada banyak metod dari class date time, ini kita akan membahas beberapa saja, untuk yang lain silahkan explore sendiri
 
-|DateTime function | keterangan|
-|------------------|-----------|
-|setTime($hour,$minute,$second)| untuk men set waktu datetime, dalam bentuk jam, menit , detik|
-|setDate($year,$month,$day)| untuk men set tanggal, hari , bulan dan tahun|
-|setTimeStamp($unix timestamp)| untuk mengeset dengan unix timestamp|
+| DateTime function              | keterangan                                                    |
+| ------------------------------ | ------------------------------------------------------------- |
+| setTime($hour,$minute,$second) | untuk men set waktu datetime, dalam bentuk jam, menit , detik |
+| setDate($year,$month,$day)     | untuk men set tanggal, hari , bulan dan tahun                 |
+| setTimeStamp($unix timestamp)  | untuk mengeset dengan unix timestamp                          |
 
 ```php
 
